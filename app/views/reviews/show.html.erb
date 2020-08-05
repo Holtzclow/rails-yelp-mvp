@@ -1,0 +1,6 @@
+<%= link_to 'add a new review', new_restaurant_review_path(@restaurant) %>
+<%= restaurant.reviews.each do |review| %>
+<p><%= review.content %></p>
+<p>rating :<%= review.rating %></p>
+<hr>
+<% end %>
